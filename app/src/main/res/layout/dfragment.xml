@@ -2,17 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
+        android:text="已导入门票数量及详细信息显示"
         android:id="@+id/xinxi"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:background="@drawable/textview"
         />
     <LinearLayout
         android:id="@+id/list_head"
@@ -21,27 +21,37 @@
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
         >
-        <TextView android:id="@+id/zhonglei"
+        <TextView android:id="@+id/piaohao"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="票种"
+            android:text="票号"
             android:gravity="center"
             android:textSize="20dp"
             android:background="@drawable/textview"
-            >
-            </TextView>
-        <TextView android:id="@+id/shuliang"
+            />
+
+        <TextView android:id="@+id/time"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="数量"
+            android:text="导入时间"
             android:gravity="center"
             android:textSize="20dp"
             android:background="@drawable/textview"
-            >
-        </TextView>
-  </LinearLayout>
+            />
+        <TextView android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="状态"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/textview"
+            />
+
+
+    </LinearLayout>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="300dp"
